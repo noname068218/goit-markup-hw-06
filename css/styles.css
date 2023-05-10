@@ -621,6 +621,66 @@ img {
   background-color: var(--footer-iconsbg);
 }
 
+/* form-footer*/
+.text-form {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--background-color);
+
+  margin-bottom: 16px;
+  margin-left: 80px;
+}
+
+.subscribe {
+  display: flex;
+  gap: 24px;
+  margin-left: 80px;
+}
+#Email::placeholder {
+  color: var(--background-color);
+
+  padding: 8px 16px;
+}
+
+.telegram-icon {
+  fill: var(--background-color);
+}
+
+.input-footer {
+  width: 264px;
+  min-height: 40px;
+
+  border: 1px solid #ffffff;
+
+  background: none;
+
+  border-radius: 4px;
+
+  padding: 0;
+  margin: 0;
+}
+
+.form-footer-button {
+  color: var(--background-color);
+  background-color: var(--social-link);
+
+  border-radius: 4px;
+  width: 165px;
+  min-height: 40px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
+
+  border: none;
+}
+
 /* Portfolio */
 .rest-button {
   font-family: 'Roboto', sans-serif;
