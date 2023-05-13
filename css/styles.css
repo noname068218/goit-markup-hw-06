@@ -353,6 +353,23 @@ button {
   position: absolute;
   left: 5%;
   top: 50%;
+  fill: #2e2f42;
+  pointer-events: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.name:focus {
+  fill: #404bbf;
+}
+
+input {
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.color-input:focus ~ .name,
+.color-input:focus {
+  border-color: rgba(77, 90, 229, 1);
+  fill: #404bbf;
 }
 
 .text-input-phone {
@@ -363,12 +380,18 @@ button {
   margin-top: 8px;
 }
 
-.phone-input {
+.phone-icon {
   position: absolute;
   left: 5%;
   top: 45%;
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.phone-input:focus ~ .phone-icon,
+.phone-input:focus {
+  border-color: rgba(77, 90, 229, 1);
+  fill: rgba(77, 90, 229, 1);
+}
 .text-input-email {
   color: #8e8f99;
   position: relative;
@@ -376,10 +399,18 @@ button {
   margin-bottom: 4px;
   margin-top: 8px;
 }
-.email-input {
+
+.email-icon {
   position: absolute;
   left: 5%;
   top: 45%;
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.email-input:focus ~ .email-icon,
+.email-input:focus {
+  border-color: rgba(77, 90, 229, 1);
+  fill: rgba(77, 90, 229, 1);
 }
 
 .text-aria {
@@ -427,6 +458,11 @@ label + .check-box {
   line-height: 14px;
 }
 
+.name:focus {
+  border-color: #31d0aa;
+  fill: #404bbf;
+}
+
 input[type='checkbox'] {
   display: block;
   width: 16px;
@@ -441,6 +477,7 @@ input[type='checkbox'] {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 24px;
   padding: 16px 32px;
   width: 169px;
   min-height: 56px;
