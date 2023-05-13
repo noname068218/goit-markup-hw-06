@@ -340,15 +340,41 @@ button {
   min-height: 40px;
 }
 
-.text-input {
+.text-input-name {
+  position: relative;
+  margin-left: 24px;
+  margin-bottom: 4px;
+}
+
+.name {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+}
+
+.text-input-phone {
+  position: relative;
   margin-left: 24px;
   margin-bottom: 4px;
   margin-top: 8px;
 }
 
-.text-inpu {
+.phone-input {
+  position: absolute;
+  left: 5%;
+  top: 45%;
+}
+
+.text-input-email {
+  position: relative;
   margin-left: 24px;
   margin-bottom: 4px;
+  margin-top: 8px;
+}
+.email-input {
+  position: absolute;
+  left: 5%;
+  top: 45%;
 }
 
 /* seconadry section*/
